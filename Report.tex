@@ -1,0 +1,249 @@
+\documentclass[a4paper]{report}
+
+\usepackage[utf8]{vietnam}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{array}
+\setlength{\parindent}{0pt}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{tikz}
+\usepackage{titlesec} 
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{emptypage}
+\usepackage{afterpage}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{titlesec}
+\usepackage[top=3cm, bottom=3.5cm, left=3cm, right=2cm]{geometry}
+\usepackage{svg}
+
+\usepackage{tocloft}
+\hypersetup{
+    colorlinks=true,   % Đặt màu cho liên kết thay vì khung
+    linkcolor=blue,    % Màu của các liên kết trong mục lục
+    linkbordercolor={1 1 1} % Tắt khung bao quanh liên kết      
+}
+\renewcommand{\cftsecfont}{\bfseries}
+
+\renewcommand{\thesection}{\arabic{section}} 
+\setcounter{secnumdepth}{2} 
+\setcounter{tocdepth}{2}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage} % Đặt số trang ở giữa dưới
+
+
+\thisfancyput(3.25in,-4.6in)
+{\setlength{\unitlength}{1in}\fancyoval(7,9.5)}
+
+\pagestyle{fancy}
+
+\lhead{\it Trực quan hóa dữ liệu}
+
+\rhead{\it 22KHDL}
+
+
+
+\begin{titlepage} 
+
+\begin{center}
+
+{\large\bf ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}\\
+{\large\bf TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN}\\
+{\large\bf KHOA CÔNG NGHỆ THÔNG TIN} \\[0.5cm]
+
+{———————o0o——————–}
+
+\includegraphics[width=0.4\textwidth]{images/logo KHTN_REMAKE.png}\\[0.5cm]
+
+\hrulefill\\[0.25cm]
+{\large\bf BÁO CÁO ĐỒ ÁN}\\[0.25cm]
+
+{\LARGE\bf \textbf{TRỰC QUAN HÓA DỮ LIỆU}}\\[1cm]
+
+{\large\bf {\it Chủ đề:} Tình hình kinh tế - xã hội ở Việt Nam năm 2024}\\
+\hrulefill\\[2cm]
+
+\begin{tabular}{r l}
+{\large \it Giảng viên hướng dẫn:} & {\large\bf Bùi Tiến Lên} \\ 
+& {\large\bf Võ Nhật Tân} \\ 
+& {\large\bf Lê Ngọc Thành} \\[0.5cm]
+{\large \it Nhóm:} & {\large\bf 11} \\[0.5cm]
+{\large \it Lớp:} & {\large\bf 22KHDL}
+\end{tabular}
+\vfill
+{\large Thành phố Hồ Chí Minh, \MakeLowercase{\today}}
+\end{center}
+\end{titlepage}
+
+% NỘI DUNG
+
+\tableofcontents
+
+\newpage
+\lhead{\it Trực quan hóa dữ liệu}
+\rhead{\it Nhóm 11 - 22KHDL}
+
+\newpage
+\section{Giới thiệu}
+\subsection{Bối cảnh và mục tiêu}
+{\begin{itemize}
+    \item \textbf{Bối cảnh}: 
+    \item \textbf{Mục tiêu trực quan hóa}:
+    \item \textbf{Đối tượng sử dụng}:
+    \item \textbf{Phạm vi nghiên cứu}: Dashboard tập trung vào các chỉ số kinh tế vĩ mô quan trọng như GDP, ... 
+\end{itemize}
+[KHÔNG ĐÚNG: Đồ án nghiên cứu về tình hình xuất khẩu và nhập khẩu hàng hóa của Việt Nam trong năm 2024, với mục tiêu phân tích các chỉ số xuất khẩu chủ yếu như thủy sản, cà phê, và các sản phẩm nông sản. Ngoài ra, đồ án còn phân tích các chỉ số kinh tế quan trọng như \textbf{GDP}, \textbf{FDI}, \textbf{CPI}, \textbf{IIP}, và \textbf{lao động}, nhằm đánh giá sự biến động của nền kinh tế và sự tác động của các yếu tố này đối với tình hình xuất khẩu của Việt Nam.]
+
+\subsection{Giới thiệu về Dashboard}
+[ghi thêm]
+{\begin{itemize}
+    \item \textbf{Cấu trúc}: 
+    \item \textbf{Dashboard và dữ liệu}: dẫn link github
+    \item \textbf{Công cụ sử dụng}: Công cụ chính được sử dụng trong đồ án này là:
+        \begin{itemize}
+            \item \textbf{Excel}: Được sử dụng để thu thập, làm sạch và tiền xử lí dữ liệu. Excel cung cấp các tính năng mạnh mẽ để phân tích dữ liệu cơ bản và tạo các bảng tính hỗ trợ quá trình xử lý.
+        \end{itemize}
+\end{itemize}
+
+\section{Chuẩn bị dữ liệu}
+\subsection{Nguồn dữ liệu, độ tin cậy và tính cập nhật}
+Dữ liệu cho đồ án này được thu thập từ \textbf{Tổng cục Hải quan} và \textbf{Tổng cục Thống kê}. Các nguồn dữ liệu này cung cấp thông tin về tình hình \textbf{xuất khẩu hàng hóa} theo tháng và các chỉ số \textbf{kinh tế vĩ mô} theo quý trong năm 2024, bao gồm: \textbf{GDP}, \textbf{FDI}, \textbf{CPI}, \textbf{IIP}, và \textbf{lao động}. Dữ liệu này được sử dụng để xây dựng các biểu đồ và đồ thị mô tả sự biến động trong trị giá xuất khẩu và các chỉ số kinh tế chính. Tất cả các dữ liệu này đều được công khai và được cung cấp bởi các cơ quan chính thức, đảm bảo tính chính xác và đáng tin cậy.
+
+\subsection{Quy trình xử lý dữ liệu}
+Quy trình xử lý dữ liệu bao gồm các bước: [ghi thêm, không đủ chi tiết (chuyển dạng bảng trước khi import vào chẳng hạn)]
+\begin{itemize}
+    \item Thu thập dữ liệu từ các báo cáo chính thức của \textbf{Tổng cục Hải quan} và \textbf{Tổng cục Thống kê}.
+    \item Làm sạch dữ liệu và chuẩn hóa định dạng trong \textbf{Excel}. Các bước này bao gồm loại bỏ dữ liệu bị thiếu và kiểm tra các giá trị bất thường.
+    \item Phân loại các mặt hàng xuất khẩu theo các nhóm sản phẩm, dựa trên các mã HS (hệ thống mã hàng hóa).
+\end{itemize}
+
+\subsection{Các đối tượng trực quan hóa}
+Các đối tượng trực quan hóa dữ liệu bao gồm: [ghi thêm]
+\begin{itemize}
+    \item \textbf{GDP}: Chỉ số GDP của Việt Nam trong năm 2024.
+\end{itemize}
+
+\textbf{Lý do lựa chọn các chỉ số này}: Các chỉ số này là hững chỉ số kinh tế vĩ mô quan trọng, phản ánh tổng thể nền kinh tế.
+
+\subsection{Đánh giá:}
+[Ghi thêm, Ví dụ:  Nguồn dữ liệu đáng tin cậy, minh bạch, được cập nhật thường xuyên. Quy trình xử lý dữ liệu không được mô tả chi tiết, nhưng với uy tín của các cơ quan nhà nước, có thể tin tưởng vào chất lượng dữ liệu.]
+
+
+\newpage
+\section{Trực quan hóa dữ liệu}
+Dashboard được chia làm hai phần:
+\begin{itemize}
+    \item \textbf{Dashboard tổng quan}: Cung cấp cái nhìn tổng quan về tình hình kinh tế - xã hội vĩ mô của Việt Nam trong năm 2024.
+    \item \textbf{Dashboard chi tiết}: Phân tích chi tiết về từng khía cạnh của kinh tế vĩ mô.
+\end{itemize}
+
+
+\subsection{Dashboard tổng quan - Trang 1}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/page1.png}
+    \caption{Dashboard tổng quan}
+\end{figure}
+
+Đây là trang tổng quan của dashboard, cung cấp cái nhìn tổng quan về tình hình kinh tế - xã hội vĩ mô của Việt Nam trong năm 2024. Chính vì vậy, những chỉ số được thể hiện ở đây là những chỉ số quan trọng nhất, đưa một cái nhìn tổng quát nhất về nền kinh tế trong năm 2024. Các chỉ số được thể hiện ở đây bao gồm:
+\begin{itemize}
+    \item \textbf{GDP}: Thu nhập bình quân đầu người của Việt Nam trong năm 2024.
+    \item \textbf{Xuất khẩu}: Trị giá xuất khẩu hàng hóa của Việt Nam trong năm 2024.
+    \item \textbf{Nhập khẩu}: Trị giá nhập khẩu hàng hóa của Việt Nam trong năm 2024.
+    \item \textbf{Cán cân thương mại}: Cán cân thương mại của Việt Nam trong năm 2024.
+    \item \textbf{FDI}: Vốn đầu tư nước ngoài vào Việt Nam trong năm 2024.
+    \item \textbf{CPI}: Chỉ số giá tiêu dùng của Việt Nam trong năm 2024.
+    \item \textbf{IIP}: Chỉ số sản xuất công nghiệp của Việt Nam trong năm 2024.
+\end{itemize}
+
+Vì đối tượng trực quan hóa là người có thể không hiểu rõ về kinh tế, cũng có thể là muốn nắm nhanh cốt lõi vấn đề trực quan hóa, nên dashboard tổng quan được thiết kế đơn giản, dễ hiểu, không chứa quá nhiều thông tin chi tiết. Mà thay vào đó là làm nổi bật lên các chỉ số quan trọng có thể khái quát nhất về nền kinh tế của Việt Nam qua một năm. 
+Về mặt định dạng, dashboard thống nhất về định dạng. Phần trên cùng là tiêu đề của dashboard để làm rõ mục tiêu trực quan của dashboard. Tiếp sau nó là các thẻ (Card) chứa các chỉ số này. Các thẻ được in đậm chỉ số và được rút gọn lại với một định dạng phù hợp với trường dữ liệu và cùng với đơn vị phù hợp. Màu sắc ở đây đóng vai trò như một phân cấp từ quan trọng đến ít quan trọng hơn theo từ đậm đến nhạt. Chỉ số cần được chú ý nhất nên sẽ được in đậm (Bold), trong khi đó các tên của các chỉ số sẽ được viết thường.
+Tương tự với các biểu đồ, tiêu đề được in đậm để nổi bật vấn đề trực quan. Để tăng độ tin cậy của dữ liệu, nguồn được thêm bên dưới tiêu đề, được in nghiêng và không in đậm để không làm mất sự chú ý của người xem nhưng vẫn tăng độ tin cậy. Đồng thời, các đồ thị được chú thích rõ ràng, dễ hiểu, không chứa quá nhiều thông tin để xúc tích và trực quan nhất. Các tiêu đề phụ, nhãn của các trục, được viết thường và sáng hơn một chút.
+Đường lưới chỉ được hiển thị cho trục y. Các mức của các trục biểu thị giá trị được định dạng có đơn vị và được đặt trong một phạm vi hợp lí để trực quan.
+Với việc định dạng được áp dụng trên toàn tổ chức, giúp mọi người dễ dàng phân tích dữ liệu họ sử dụng. Khi họ quen với phong cách, họ có thể dành nhiều thời gian hơn để tập trung vào dữ liệu và ít hơn vào việc hiểu bố cục, kiểu trục,...\\
+
+Về mặt tương tác và điều hướng, tooptips được cài đặt để xem giá trị chính xác, biểu đồ có thể phóng to thu nhỏ, lựa chọn các trường muốn thể hiện, marker được thêm vào để dễ nhận biết các điểm dữ liệu đối với biểu đồ đường. 
+Các giá trị số tiền được định dạng theo định dạng tiền tệ, đồng thời thể hiện dưới dạng phù hợp để biểu đồ không bị quá tải thông tin, khó quan sát (ví dụ: 1 tỷ USD viết là \$1bn).\\
+Đối với biểu đồ dạng bản đồ, có thể cho phép chọn các tỉnh thành muốn xem thông qua slicer được phân loại thành các vùng kinh tế. Điều này giúp người xem dễ dàng tương tác với dữ liệu và tìm hiểu thêm về dữ liệu mà họ quan tâm.\\
+
+Thiết kế chia làm hai phần, một là thông tin tổng quát nhất của trang được thể hiện qua các thẻ - card rồi mới đến biểu đồ. Mỗi thẻ - card tương ứng với tổng quan một năm của chỉ số đề cập đến.
+Để người dùng có thể xem nhanh thông tin mà họ quan tâm, nhanh chóng nắm được tình hình kinh tế - xã hội năm 2024. Các thẻ được đổ bóng và màu nền khác màu nền của trang để nổi bật hơn và tạo phân tách với phần biểu đồ. Điều này giúp người dùng có thể phân vùng dễ hơn và tập trung vào từng phần một.
+Biểu đồ được chia làm 3 biểu đồ với 3 chỉ số quan trọng nhất, cũng là 3 biểu đồ có thể khái quát toàn bộ tình hình chỉ số đó ở năm 2024. Riêng biểu đồ dạng bảng đồ còn có thể phân loại theo từng vùng kinh tế.\\
+
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 2: GDP}
+
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 3: Xuất nhập khẩu và Cán cân thương mại}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/xnk_cctm.png}
+    \caption{Trang 3 - Xuất nhập khẩu và Cán cân thương mại}
+    \label{fig:enter-label}
+\end{figure}
+
+Trang này tập trung vào các chỉ số về xuất nhập khẩu và cán cân thương mại của Việt Nam trong năm 2024. Trang được phân bố theo 2 phần chính theo chiều dọc.
+Với trên cùng phần bên trái là về Tổng quan về xuất nhập khẩu và bên trái là các chỉ số xuất nhập khẩu theo nhóm ngành. Chủ đề được thể hiện bằng chữ in đậm ở đầu trang để người xem dễ dàng nhận biết nội dung của trang.
+Phần trên cùng bên trái là các chỉ số tổng quan về xuất nhập khẩu và cán cân thương mại. Các chỉ số này được thể hiện qua các thẻ - card để nổi bật và dễ nhìn. Mỗi thẻ một màu khác nhau và đây cũng là màu sắc đại diện cho chỉ số đó xuyên suốt trang để nhất quán về màu sắc, tránh lẫn lộn cho người xem: Hồng - Xuất khẩu, Xanh - Nhập khẩu, Lục - Cán cân thương mại.
+Ngay sau đó là biểu đồ Tổng kim ngạch xuất khẩu qua các tháng (giống với ở trang tổng quan). Tuy nhiên phía dưới biểu đồ có thêm một narrative để giải thích rõ ràng hơn về biểu đồ, giúp người xem dễ hiểu hơn về dữ liệu mà họ đang xem.
+Narrative chứa những nhận xét ngắn gọn về các biểu đồ. Ở đây, nó chỉ ra tổng giá trị xuất nhập khẩu, nhận xét năm 2024 là một năm xuất siêu của Việt Nam với thặng dư là 22, 63 tỷ USD. Ngoài ra còn có nhận xét về các mặt hàng xuất khẩu và nhập khẩu chủ lực của Việt Nam được thể hiện ở biểu đồ ở phần bên phải.\\
+
+Phần bên phải của trang bao gồm 2 biểu đồ cột: Nhóm hàng xuất khẩu chủ lực và Nhóm hàng nhập khẩu chủ lực. Với màu sắc tương tự như đã quy định, màu hồng cho biểu đồ xuất khẩu và màu xanh cho biểu đồ nhập khẩu. Để giúp người xem dễ dàng nhận biết và phân biệt giữa các biểu đồ, tránh bị rối.
+Tuy nhiên, để tránh việc có quá nhiều nhóm hàng hóa được thể hiện làm khó có thể nhìn ra được nhóm hàng hóa nào quan trọng nhất, nên chỉ chọn ra 5 nhóm hàng hóa xuất khẩu và nhập khẩu chủ lực nhất để thể hiện. Điều này giúp người xem dễ dàng nhìn ra được nhóm hàng hóa quan trọng nhất mà họ cần quan tâm hoặc làm cho biểu đồ khó quan sát. Các hàng hóa đã được sắp xếp
+theo thứ tự giảm dần và chỉ thể hiện 10 nhóm hàng chủ lực nhất để giúp biểu đồ dễ nhìn hơn. Ngoài ra, tooltips còn được dùng để xem tên chi tiết của nhóm hàng và giá trị chính xác của nó. Do nếu để nguyên giá trị chính xác và tên đầy đủ sẽ khiên biểu đồ không được gọn gàng và dễ nhìn.
+Để giúp người xem dễ dàng tìm được nhóm hàng hóa cần xem xét, phía trên hai biểu đồ là một slicer cho phép chọn nhóm hàng hóa cần xem. Điều này giúp người xem dễ dàng tương tác với dữ liệu và hiển thị cột hàng hóa mà họ quan tâm. Slicer có thể trượt và chia làm các nút để chọn nhanh hơn.\\
+
+
+\subsection{Dashboard chi tiết - Trang 4: FDI}
+
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 5: CPI}
+
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 6: IIP}
+
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 7: Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng}
+
+\newpage
+\subsection{Dashboard chi tiết - Trang 8: Lao động}
+
+\newpage
+\section{Đánh giá và đề xuất cải tiến}
+\subsection{Đánh giá}
+
+\subsection{Đề xuất cải tiến}
+
+%%%%%%%%%%%%%%%
+\addcontentsline{toc}{section}{Tài liệu tham khảo}
+\begin{thebibliography}{}
+
+\bibitem{1} FIT@HCMUS | Slide Chapter 5 - Relational Algebra \\
+\url{https://courses.ctda.hcmus.edu.vn/mod/resource/view.php?id=78370}
+
+
+\end{thebibliography}
+
+\end{document}

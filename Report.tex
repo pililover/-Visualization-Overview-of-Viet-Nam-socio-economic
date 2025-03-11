@@ -185,6 +185,8 @@ Dashboard được chia làm hai phần:
     \caption{Dashboard tổng quan}
 \end{figure}
 
+\paragraph{Thiết kế} \mbox{}\\
+
 Đây là trang tổng quan của dashboard, cung cấp cái nhìn tổng quan về tình hình kinh tế - xã hội vĩ mô của Việt Nam trong năm 2024. Chính vì vậy, những chỉ số được thể hiện ở đây là những chỉ số quan trọng nhất, đưa một cái nhìn tổng quát nhất về nền kinh tế trong năm 2024. Các chỉ số được thể hiện ở đây bao gồm:
 \begin{itemize}
     \item \textbf{GDP}: Thu nhập bình quân đầu người của Việt Nam trong năm 2024.
@@ -197,10 +199,7 @@ Dashboard được chia làm hai phần:
 \end{itemize}
 
 Vì đối tượng trực quan hóa là người có thể không hiểu rõ về kinh tế, cũng có thể là muốn nắm nhanh cốt lõi vấn đề trực quan hóa, nên dashboard tổng quan được thiết kế đơn giản, dễ hiểu, không chứa quá nhiều thông tin chi tiết. Mà thay vào đó là làm nổi bật lên các chỉ số quan trọng có thể khái quát nhất về nền kinh tế của Việt Nam qua một năm. 
-Về mặt định dạng, dashboard thống nhất về định dạng. Phần trên cùng là tiêu đề của dashboard để làm rõ mục tiêu trực quan của dashboard. Tiếp sau nó là các thẻ (Card) chứa các chỉ số này. Các thẻ được in đậm chỉ số và được rút gọn lại với một định dạng phù hợp với trường dữ liệu và cùng với đơn vị phù hợp. Màu sắc ở đây đóng vai trò như một phân cấp từ quan trọng đến ít quan trọng hơn theo từ đậm đến nhạt. Chỉ số cần được chú ý nhất nên sẽ được in đậm (Bold), trong khi đó các tên của các chỉ số sẽ được viết thường.
-Tương tự với các biểu đồ, tiêu đề được in đậm để nổi bật vấn đề trực quan. Để tăng độ tin cậy của dữ liệu, nguồn được thêm bên dưới tiêu đề, được in nghiêng và không in đậm để không làm mất sự chú ý của người xem nhưng vẫn tăng độ tin cậy. Đồng thời, các đồ thị được chú thích rõ ràng, dễ hiểu, không chứa quá nhiều thông tin để xúc tích và trực quan nhất. Các tiêu đề phụ, nhãn của các trục, được viết thường và sáng hơn một chút.
-Đường lưới chỉ được hiển thị cho trục y. Các mức của các trục biểu thị giá trị được định dạng có đơn vị và được đặt trong một phạm vi hợp lí để trực quan.
-Với việc định dạng được áp dụng trên toàn tổ chức, giúp mọi người dễ dàng phân tích dữ liệu họ sử dụng. Khi họ quen với phong cách, họ có thể dành nhiều thời gian hơn để tập trung vào dữ liệu và ít hơn vào việc hiểu bố cục, kiểu trục,...\\
+Về mặt định dạng, dashboard thống nhất về định dạng. Phần trên cùng là tiêu đề của dashboard để làm rõ mục tiêu trực quan của dashboard. Tiếp sau nó là các thẻ (Card) chứa các chỉ số này. Các thẻ được in đậm chỉ số và được rút gọn lại với một định dạng phù hợp với trường dữ liệu và cùng với đơn vị phù hợp. Màu sắc ở đây đóng vai trò như một phân cấp từ quan trọng đến ít quan trọng hơn theo từ đậm đến nhạt. Chỉ số cần được chú ý nhất nên sẽ được in đậm (Bold), trong khi đó các tên của các chỉ số sẽ được viết thường. Tương tự với các biểu đồ, tiêu đề được in đậm để nổi bật vấn đề trực quan. Để tăng độ tin cậy của dữ liệu, nguồn được thêm bên dưới tiêu đề, được in nghiêng và không in đậm để không làm mất sự chú ý của người xem nhưng vẫn tăng độ tin cậy. Đồng thời, các đồ thị được chú thích rõ ràng, dễ hiểu, không chứa quá nhiều thông tin để xúc tích và trực quan nhất. Các tiêu đề phụ, nhãn của các trục, được viết thường và sáng hơn một chút.   Ngoài ra các biểu đồ còn dùng màu sắc dành cho người mù màu để tiếp cận đến được nhiều đối tượng người xem. Bên cạnh đó, đường lưới chỉ được hiển thị cho trục y. Các mức của các trục biểu thị giá trị được định dạng có đơn vị và được đặt trong một phạm vi hợp lí để trực quan. Với việc định dạng được áp dụng trên toàn tổ chức, giúp mọi người dễ dàng phân tích dữ liệu họ sử dụng. Khi họ quen với phong cách, họ có thể dành nhiều thời gian hơn để tập trung vào dữ liệu và ít hơn vào việc hiểu bố cục, kiểu trục,...\\
 
 Về mặt tương tác và điều hướng, tooptips được cài đặt để xem giá trị chính xác, biểu đồ có thể phóng to thu nhỏ, lựa chọn các trường muốn thể hiện, marker được thêm vào để dễ nhận biết các điểm dữ liệu đối với biểu đồ đường. 
 Các giá trị số tiền được định dạng theo định dạng tiền tệ, đồng thời thể hiện dưới dạng phù hợp để biểu đồ không bị quá tải thông tin, khó quan sát (ví dụ: 1 tỷ USD viết là \$1bn).\\
@@ -210,6 +209,9 @@ Thiết kế chia làm hai phần, một là thông tin tổng quát nhất củ
 Để người dùng có thể xem nhanh thông tin mà họ quan tâm, nhanh chóng nắm được tình hình kinh tế - xã hội năm 2024. Các thẻ được đổ bóng và màu nền khác màu nền của trang để nổi bật hơn và tạo phân tách với phần biểu đồ. Điều này giúp người dùng có thể phân vùng dễ hơn và tập trung vào từng phần một.
 Biểu đồ được chia làm 3 biểu đồ với 3 chỉ số quan trọng nhất, cũng là 3 biểu đồ có thể khái quát toàn bộ tình hình chỉ số đó ở năm 2024. Riêng biểu đồ dạng bảng đồ còn có thể phân loại theo từng vùng kinh tế.\\
 
+\paragraph{Nội dung:} \mbox{}\\
+
+Nhìn chung, năm 2024 là một năm đầy triển vọng với nhiều thành công của Việt Nam trên kinh tế - xã hội. Kinh tế phát triển với các chỉ số GDP, Xuất nhập khẩu, Cán cân thương mại, Vốn đầu tư nước ngoài - FDI cao. Chi tiết các thành phần chúng ta sẽ được nói đến ở Dashboard chi tiết.\\
 
 \newpage
 \subsection{Dashboard chi tiết - Trang 2: GDP}
@@ -226,6 +228,8 @@ Biểu đồ được chia làm 3 biểu đồ với 3 chỉ số quan trọng n
     \label{fig:enter-label}
 \end{figure}
 
+
+\paragraph{Thiết kế: } \mbox{}\\
 Trang này tập trung vào các chỉ số về xuất nhập khẩu và cán cân thương mại của Việt Nam trong năm 2024. Trang được phân bố theo 2 phần chính theo chiều dọc.
 Với trên cùng phần bên trái là về Tổng quan về xuất nhập khẩu và bên trái là các chỉ số xuất nhập khẩu theo nhóm ngành. Chủ đề được thể hiện bằng chữ in đậm ở đầu trang để người xem dễ dàng nhận biết nội dung của trang.
 Phần trên cùng bên trái là các chỉ số tổng quan về xuất nhập khẩu và cán cân thương mại. Các chỉ số này được thể hiện qua các thẻ - card để nổi bật và dễ nhìn. Mỗi thẻ một màu khác nhau và đây cũng là màu sắc đại diện cho chỉ số đó xuyên suốt trang để nhất quán về màu sắc, tránh lẫn lộn cho người xem: Hồng - Xuất khẩu, Xanh - Nhập khẩu, Lục - Cán cân thương mại.
@@ -237,6 +241,14 @@ Tuy nhiên, để tránh việc có quá nhiều nhóm hàng hóa được thể
 theo thứ tự giảm dần và chỉ thể hiện 10 nhóm hàng chủ lực nhất để giúp biểu đồ dễ nhìn hơn. Ngoài ra, tooltips còn được dùng để xem tên chi tiết của nhóm hàng và giá trị chính xác của nó. Do nếu để nguyên giá trị chính xác và tên đầy đủ sẽ khiên biểu đồ không được gọn gàng và dễ nhìn.
 Để giúp người xem dễ dàng tìm được nhóm hàng hóa cần xem xét, phía trên hai biểu đồ là một slicer cho phép chọn nhóm hàng hóa cần xem. Điều này giúp người xem dễ dàng tương tác với dữ liệu và hiển thị cột hàng hóa mà họ quan tâm. Slicer có thể trượt và chia làm các nút để chọn nhanh hơn.\\
 
+Ngoài ra nhóm cũng sử dụng màu cho người mù màu để thích hợp với nhiều đối tượng theo dõi.
+
+\paragraph{Nội dung:} \mbox{}\\
+Từ nội dung trình bày trong dashboard, chúng ta có thể thấy được năm 2024 là một năm hoạt động xuất nhập khẩu diễn ra sôi động với \textbf{tổng kim ngạch xuất, nhập khẩu hàng hóa} đạt 782.85 tỷ USD, trong đó \textbf{xuất khẩu} đạt 402.74 tỷ USD; \textbf{nhập khẩu} đạt 380.11 tỷ USD. Cán cân thương mại hàng hóa \textbf{xuất siêu} 22.63 tỷ USD.
+
+Trong năm 2024 có nhiều mặt hàng đạt kim ngạch xuất khẩu trên 1 tỷ USD, trong đó có các \textbf{mặt hàng xuất khẩu chủ lực} như điện tử, máy tính và linh kiện; điện thoại và linh kiện; máy móc, thiết bị, dụng cụ phụ tùng khác; dệt may; giày dép và gỗ duy trì vị trí dẫn đầu. Điện tử máy tính và linh kiện là nhóm hàng xuất khẩu dẫn đầu về giá trị xuất khẩu, với sự đóng góp lớn của các tập đoàn công nghệ như Samsung, LG, Apple và các công ty sản xuất linh kiện điện tử tại Việt Nam.
+
+Bên cạnh đó, các \textbf{mặt hàng nhập khẩu chủ lực} gồm: các mặt hàng phục vụ nhu cầu nguyên liệu và thiết bị cho sản xuất công nghiệp. Việt Nam vẫn phải nhập khẩu nhiều nguyên liệu sản xuất (như thép, dầu thô, hóa chất) và máy móc, thiết bị công nghiệp phục vụ cho ngành chế tạo, điện tử và ô tô. 
 
 \subsection{Dashboard chi tiết - Trang 4: FDI}
 \begin{figure}[H]

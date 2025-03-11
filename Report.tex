@@ -101,46 +101,71 @@
 \section{Giới thiệu}
 \subsection{Bối cảnh và mục tiêu}
 {\begin{itemize}
-    \item \textbf{Bối cảnh}: 
-    \item \textbf{Mục tiêu trực quan hóa}:
-    \item \textbf{Đối tượng sử dụng}:
+    \item \textbf{Bối cảnh}: Năm 2024, kinh tế thế giới tiếp tục đối mặt với nhiều khó khăn, thách thức. Trong bối cảnh đó, Việt Nam cũng không nằm ngoài quy luật của nền kinh tế thế giới. Để đánh giá tình hình kinh tế - xã hội của Việt Nam trong năm 2024, việc trực quan hóa dữ liệu sẽ giúp chúng ta hiểu rõ hơn về sự biến động của nền kinh tế, từ đó đưa ra những quyết định phù hợp.
+    \item \textbf{Mục tiêu trực quan hóa}: Tình hình kinh tế - xã hội ở Việt Nam trong năm 2024, bao gồm các chỉ số chính về kinh tế vĩ mô của đất nước.
+    \item \textbf{Đối tượng sử dụng}: Hướng đến các nhà hoạch định chính sách, nhà nghiên cứu kinh tế, doanh nghiệp, nhà đầu tư, nhà báo và bất kỳ ai quan tâm đến tình hình kinh tế Việt Nam.
     \item \textbf{Phạm vi nghiên cứu}: Dashboard tập trung vào các chỉ số kinh tế vĩ mô quan trọng như GDP, ... 
 \end{itemize}
-[KHÔNG ĐÚNG: Đồ án nghiên cứu về tình hình xuất khẩu và nhập khẩu hàng hóa của Việt Nam trong năm 2024, với mục tiêu phân tích các chỉ số xuất khẩu chủ yếu như thủy sản, cà phê, và các sản phẩm nông sản. Ngoài ra, đồ án còn phân tích các chỉ số kinh tế quan trọng như \textbf{GDP}, \textbf{FDI}, \textbf{CPI}, \textbf{IIP}, và \textbf{lao động}, nhằm đánh giá sự biến động của nền kinh tế và sự tác động của các yếu tố này đối với tình hình xuất khẩu của Việt Nam.]
 
 \subsection{Giới thiệu về Dashboard}
-[ghi thêm]
+
 {\begin{itemize}
-    \item \textbf{Cấu trúc}: 
-    \item \textbf{Dashboard và dữ liệu}: dẫn link github
+    \item \textbf{Cấu trúc}: Dashboard gồm 8 trang với 2 phần tương ứng với: 
+        \begin{itemize}
+            \item \textbf{Dashboard tổng quan}: Cung cấp cái nhìn tổng quan về tình hình kinh tế - xã hội vĩ mô của Việt Nam trong năm 2024.
+            \item \textbf{Dashboard chi tiết}: Phân tích chi tiết về từng khía cạnh của kinh tế vĩ mô với các chỉ số:
+                \begin{itemize}
+                    \item \textbf{GDP}: Chỉ số GDP của Việt Nam trong năm 2024.
+                    \item \textbf{Xuất nhập khẩu và cán cân thương mại}: Trị giá xuất khẩu, nhập khẩu và cán cân thương mại của Việt Nam trong năm 2024.
+                    \item \textbf{FDI}: Vốn đầu tư nước ngoài vào Việt Nam trong năm 2024.
+                    \item \textbf{CPI}: Chỉ số giá tiêu dùng của Việt Nam trong năm 2024.
+                    \item \textbf{IIP}: Chỉ số sản xuất công nghiệp của Việt Nam trong năm 2024.
+                    \item \textbf{Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng}
+                    \item \textbf{Lao động}: Tình hình lao động của Việt Nam trong năm 2024.
+                \end{itemize}
+        \end{itemize}
+    \item \textbf{Dashboard và dữ liệu}: \href{https://github.com/pililover/-Visualization-Overview-of-Viet-Nam-socio-economic}{Github} chứa mã nguồn và dữ liệu của dashboard.
     \item \textbf{Công cụ sử dụng}: Công cụ chính được sử dụng trong đồ án này là:
         \begin{itemize}
             \item \textbf{Excel}: Được sử dụng để thu thập, làm sạch và tiền xử lí dữ liệu. Excel cung cấp các tính năng mạnh mẽ để phân tích dữ liệu cơ bản và tạo các bảng tính hỗ trợ quá trình xử lý.
+            \item \textbf{Power BI}: Được sử dụng để trực quan hóa dữ liệu.
+            \item \textbf{Python}: Được sử dụng để tiền xử lí dữ liệu.
         \end{itemize}
 \end{itemize}
 
 \section{Chuẩn bị dữ liệu}
 \subsection{Nguồn dữ liệu, độ tin cậy và tính cập nhật}
-Dữ liệu cho đồ án này được thu thập từ \textbf{Tổng cục Hải quan} và \textbf{Tổng cục Thống kê}. Các nguồn dữ liệu này cung cấp thông tin về tình hình \textbf{xuất khẩu hàng hóa} theo tháng và các chỉ số \textbf{kinh tế vĩ mô} theo quý trong năm 2024, bao gồm: \textbf{GDP}, \textbf{FDI}, \textbf{CPI}, \textbf{IIP}, và \textbf{lao động}. Dữ liệu này được sử dụng để xây dựng các biểu đồ và đồ thị mô tả sự biến động trong trị giá xuất khẩu và các chỉ số kinh tế chính. Tất cả các dữ liệu này đều được công khai và được cung cấp bởi các cơ quan chính thức, đảm bảo tính chính xác và đáng tin cậy.
+Dữ liệu cho đồ án này được thu thập từ \href{https://www.customs.gov.vn/}{\textbf{Tổng cục Hải quan}} và \href{https://www.gso.gov.vn/}{\textbf{Tổng cục Thống kê}}. Các nguồn dữ liệu này cung cấp thông tin về các chỉ số \textbf{kinh tế vĩ mô} theo quý trong năm 2024, bao gồm: \textbf{GDP}, \textbf{FDI}, \textbf{CPI}, \textbf{IIP}, \textbf{lao động} và tình hình \textbf{xuất nhập khẩu hàng hóa} theo tháng. Dữ liệu này được sử dụng để xây dựng các biểu đồ và đồ thị mô tả sự biến động trong nền kinh tế Việt Nam. Tất cả các dữ liệu này đều được công khai và được cung cấp bởi các cơ quan chính thức, đảm bảo tính chính xác và đáng tin cậy.
 
 \subsection{Quy trình xử lý dữ liệu}
-Quy trình xử lý dữ liệu bao gồm các bước: [ghi thêm, không đủ chi tiết (chuyển dạng bảng trước khi import vào chẳng hạn)]
+Quy trình xử lý dữ liệu bao gồm các bước:
 \begin{itemize}
     \item Thu thập dữ liệu từ các báo cáo chính thức của \textbf{Tổng cục Hải quan} và \textbf{Tổng cục Thống kê}.
-    \item Làm sạch dữ liệu và chuẩn hóa định dạng trong \textbf{Excel}. Các bước này bao gồm loại bỏ dữ liệu bị thiếu và kiểm tra các giá trị bất thường.
-    \item Phân loại các mặt hàng xuất khẩu theo các nhóm sản phẩm, dựa trên các mã HS (hệ thống mã hàng hóa).
+    \item Làm sạch dữ liệu và chuẩn hóa định dạng trong \textbf{Excel}. Các bước này bao gồm loại bỏ dữ liệu bị thiếu và kiểm tra các giá trị bất thường bằng \textbf{Python}.
+    \item Đưa dữ liệu về dạng bảng trong Excel để có thể đưa vào PowerBI để trực quan hóa.
+    \item Chuyển vị các bảng dữ liệu để phù hợp với yêu cầu về dữ liệu của các biểu đồ muốn trực quan có trong \textbf{PowerBI}.
+    \item Nhập các bảng dữ liệu vào \textbf{PowerBI}. Nhưng dữ liệu ở đây có giá trị phần trăm và tiền tệ nên chuyển các giá trị này về đúng định dạng Currency và Percentage trong \textbf{Excel}. Ngoài ra, đối với ngày tháng, do \textbf{PowerBI} đối với biểu đồ đường chỉ hiển thị những tháng chẵn, nhưng nếu chuyển về dạng phân loại thì không thể hiển thị theo thứ tự tháng nên nhóm đã bỏ năm và chỉ giữ tháng để hiển thị, chuyển về dạng số và dùng \textbf{filter visualize} của \textbf{PowerBI} để chỉnh trên biểu đồ.
 \end{itemize}
 
 \subsection{Các đối tượng trực quan hóa}
-Các đối tượng trực quan hóa dữ liệu bao gồm: [ghi thêm]
+Các đối tượng trực quan hóa dữ liệu bao gồm:
 \begin{itemize}
     \item \textbf{GDP}: Chỉ số GDP của Việt Nam trong năm 2024.
+    \item \textbf{Xuất khẩu}: Trị giá xuất khẩu hàng hóa của Việt Nam trong năm 2024.
+    \item \textbf{Nhập khẩu}: Trị giá nhập khẩu hàng hóa của Việt Nam trong năm 2024.
+    \item \textbf{Cán cân thương mại}: Cán cân thương mại của Việt Nam trong năm 2024.
+    \item \textbf{FDI}: Vốn đầu tư nước ngoài vào Việt Nam trong năm 2024.
+    \item \textbf{CPI}: Chỉ số giá tiêu dùng của Việt Nam trong năm 2024.
+    \item \textbf{IIP}: Chỉ số sản xuất công nghiệp của Việt Nam trong năm 2024.
+    \item \textbf{Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng}
+    \item \textbf{Lao động}: Tình hình lao động của Việt Nam trong năm 2024.
 \end{itemize}
 
-\textbf{Lý do lựa chọn các chỉ số này}: Các chỉ số này là hững chỉ số kinh tế vĩ mô quan trọng, phản ánh tổng thể nền kinh tế.
+\textbf{Lý do lựa chọn các chỉ số này}: Các chỉ số này là những chỉ số kinh tế vĩ mô quan trọng, phản ánh tổng thể nền kinh tế.
 
 \subsection{Đánh giá:}
-[Ghi thêm, Ví dụ:  Nguồn dữ liệu đáng tin cậy, minh bạch, được cập nhật thường xuyên. Quy trình xử lý dữ liệu không được mô tả chi tiết, nhưng với uy tín của các cơ quan nhà nước, có thể tin tưởng vào chất lượng dữ liệu.]
+
+Nguồn dữ liệu đáng tin cậy, minh bạch, được thu thập và cập nhật hằng tháng. Uy tín của các cơ quan nhà nước, có thể tin tưởng vào chất lượng dữ liệu.
 
 
 \newpage
@@ -189,16 +214,7 @@ Biểu đồ được chia làm 3 biểu đồ với 3 chỉ số quan trọng n
 \newpage
 \subsection{Dashboard chi tiết - Trang 2: GDP}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/gdp.png}
-    \caption{Trang 2 - Thu nhập bình quân đầu người}
-    \label{fig:enter-label}
-\end{figure}
 
-Trang này trình bày về các chỉ số liên quan đến thu nhập bình quân đầu người (GDP) của Việt Nam trong năm 2024. Nhìn chung, trang bao gồm phần biểu đồ và phần chú thích. Các biểu đồ có tiêu đề rõ ràng, được in đậm và được thể hiện với các màu hài hòa nhau tạo nên sự dễ nhìn, bắt mắt, thân thiện với người xem. Các biểu đồ cũng được hỗ trợ bằng tooltips để người đọc xem chi tiết của các giá trị của từng đối tượng dữ liệu.\\
-Đến với phần biểu đồ, ta có 2 biểu đồ chính. Ở bên trái, biểu đồ cột thể hiện Tăng trưởng GDP năm 2024 với các cột được xếp tăng dần theo Quý. Biểu đồ có 2 màu chủ đạo cho cột dữ liệu là màu xanh dương và màu vàng, màu vàng thể hiện số liệu năm 2024, còn xanh dương thể hiện số liệu năm 2010, giúp nhìn vào có thể dễ dàng phân biệt. Mỗi cột dữ liệu đều có số liệu được thể hiện trên cột. Đến với bên phải ta có biểu đồ hình donut thể hiện cơ cấu GDP năm 2024. Các danh mục đều có các màu sắc phân biệt rõ ràng. Số lượng danh mục cũng không quá nhiều giúp cho biểu đồ tránh bị rối. Các mảng bảnh có chú thích giá trị kèm theo tỉ lệ chiếm trong tổng thể.\\
-Phần trên bên góc trái của trang ta có thể thấy 2 card thể hiện tổng GDP năm 2024 và GDP hiện hành so với năm 2010. Điều này không chỉ giúp cho người xem nắm bắt nhanh nội dung dữ liệu mà còn thấy được xu hướng và mức độ tăng của GDP. Ngoài ra, tại góc dưới cùng bên phải của trang còn có phần narrative để nhận xét chung cho toàn bộ trang. Những điểm quan trọng trong narrative đã được in đậm hợp lí giúp người đọc dễ nắm bắt thông tin chính.
 \newpage
 \subsection{Dashboard chi tiết - Trang 3: Xuất nhập khẩu và Cán cân thương mại}
 
@@ -220,6 +236,7 @@ Phần bên phải của trang bao gồm 2 biểu đồ cột: Nhóm hàng xuấ
 Tuy nhiên, để tránh việc có quá nhiều nhóm hàng hóa được thể hiện làm khó có thể nhìn ra được nhóm hàng hóa nào quan trọng nhất, nên chỉ chọn ra 5 nhóm hàng hóa xuất khẩu và nhập khẩu chủ lực nhất để thể hiện. Điều này giúp người xem dễ dàng nhìn ra được nhóm hàng hóa quan trọng nhất mà họ cần quan tâm hoặc làm cho biểu đồ khó quan sát. Các hàng hóa đã được sắp xếp
 theo thứ tự giảm dần và chỉ thể hiện 10 nhóm hàng chủ lực nhất để giúp biểu đồ dễ nhìn hơn. Ngoài ra, tooltips còn được dùng để xem tên chi tiết của nhóm hàng và giá trị chính xác của nó. Do nếu để nguyên giá trị chính xác và tên đầy đủ sẽ khiên biểu đồ không được gọn gàng và dễ nhìn.
 Để giúp người xem dễ dàng tìm được nhóm hàng hóa cần xem xét, phía trên hai biểu đồ là một slicer cho phép chọn nhóm hàng hóa cần xem. Điều này giúp người xem dễ dàng tương tác với dữ liệu và hiển thị cột hàng hóa mà họ quan tâm. Slicer có thể trượt và chia làm các nút để chọn nhanh hơn.\\
+
 
 \subsection{Dashboard chi tiết - Trang 4: FDI}
 
